@@ -1,0 +1,244 @@
+name: CHBukkitHunger
+main: spinghg.hungergames.libsHg
+version: 1.0
+depend: [ProtocolLib]
+commands:
+  kit:
+    description: veje os kits
+  kits:
+    description: veje os kits
+  start:
+    description: inicie a partida
+  tag:
+    description: /tag
+  tags:
+    description: /tag
+  forcefeast:
+    description: /forcefeast
+    aliases: [ forcef, feast ]
+  tell:
+    description: mande uma msg para seu amigo
+    aliases: [ msg ]
+  tp:
+    description: teleporte para alguem
+  s:
+    description: /s
+  gm:
+    description: mude o modo de jogo
+    aliases: [ gamemode ]
+  spawn:
+    description: teleporte para um lugar aleatorio
+  reload:
+    description: /reload
+    aliases: [ rl ]
+  fly:
+    description: ative seu modo fly
+  help:
+    description: /help
+  kitinfo:
+    description: veja a descricao do kit
+  status:
+    description: veja como voce esta no servidor
+    aliases: [ kd, stats ]
+  skit:
+    description: crie um kit para evento
+  admin:
+    description: ative o seu admin
+  aviso:
+    aliases: [ bc ]
+    description: Anuncie
+  tempo:
+    description: Mude o tempo do jogo
+  Team:
+    aliases: [ t ]
+    description: Crie um time  
+  staff:
+    description: veja os staff on
+  tempo:
+    aliases: [ time ]
+    description: /tempo
+  ping:
+    aliases: [ p ]
+    description: /ping
+  spect:
+    aliases: [ s ]
+    description: /spect
+  morrer:
+    aliases: [ m ]
+    description: /morrer
+  rj:
+    description: /rj
+  youtuber:
+    description: /youtuber
+  ip:
+    description: /ip
+  togglekit:
+    description: /togglekit
+  hg:
+    description: /hg
+  f:
+    description: /f
+  Mod:
+    description: /mod
+  invsee:
+    description: /invsee
+  Achilles:
+    description: /Achilles
+  Archer:
+    description: /Archer
+  Anchor:
+    description: /Anchor
+  Achilles:
+    description: /Anchor
+  Barbarian:
+    description: /Barbarian
+  Berserker:
+    description: /Berserker
+  Blacksmith:
+    description: /Blacksmith
+  Blink:
+    description: /Blink
+  Boxer:
+    description: /Boxer
+  Burrower:
+    description: /Burrower
+  Camel:
+    description: /Camel
+  Cannibal:
+    description: /Cannibal
+  CheckPoint:
+    description: /CheckPoint
+  Cultivator:
+    description: /Cultivator
+  Demoman:
+    description: /Demoman
+  Endermage:
+    description: /Endermage
+  Fireman:
+    description: /Fireman
+  Fisherman:
+    description: /Fisherman
+  Flash:
+    description: /Flash
+  Forge:
+    description: /Forge
+  Frosty:
+    description: /Frosty
+  Frozen:
+    description: /Frozen
+  Gladiator:
+    description: /Gladiator
+  Grandpa:
+    description: /Grandpa
+  Grappler:
+    description: /Grappler
+  Hermit:
+    description: /Hermit
+  Hulk:
+    description: /Hulk
+  Jellyfish:
+    description: /Jellyfish
+  Kangaroo:
+    description: /Kangaroo
+  Lumberjack:
+    description: /Lumberjack
+  Miner:
+    description: /Miner
+  Ninja:
+    description: /Ninja
+  Phantom:
+    description: /Phantom
+  Poseidon:
+    description: /Poseidon
+  Pyro:
+    description: /Pyro
+  Reaper:
+    description: /Reaper
+  Redstoner:
+    description: /Redstoner
+  Rider:
+    description: /Rider
+  Snail:
+    description: /Snail
+  Specialist:
+    description: /Specialist
+  Stomper:
+    description: /Stomper
+  Switcher:
+    description: /Switcher
+  Tank:
+    description: /Tank
+  Terrorist:
+    description: /Terrorist
+  Thor:
+    description: /Thor
+  Timelord:
+    description: /TimeLord
+  Turtle:
+    description: /Turtle
+  Urgal:
+    description: /Urgal
+  Vacuum:
+    description: /Vacuum
+  Vampire:
+    description: /Vampire
+  Viking:
+    description: /Viking
+  Viper:
+    description: /Viper
+  Worm:
+    description: /Frozen
+  Thermo:
+    description: /Thermo
+  Confusion:
+    description: /Confusion
+  Weakhand:
+    description: /WeakHand
+  Crafter:
+    description: /Crafter
+  ban:
+    description: /ban
+  unban:
+    description: /unban
+  Sw:
+    description: /Sw
+  MudarCDS:
+    description: /MudarCDS
+  entrar:
+    description: /entrar
+  f:
+    description: /f
+  chat:
+    description: /chat
+  Coins:
+    description: /Coins
+  sudo:
+    description: /sudo  
+  kick:
+    description: /kick  
+  Registrar:
+    description: /Registrar
+  Crash:
+    description: /Crash
+  SerialKiller:
+    description: /SerialKiller 
+  cs:
+    description: /cs   
+  check:
+    description: /check      
+  Lavaman:
+    description: /Lavaman
+  Hungerly:
+    description: /Hungerly
+  CookieMonster:
+    description: /CookieMonster
+  Spirit:
+    description: /Spirit
+  Jumper:
+    description: /Jumper
+  Tower:
+    description: /Tower
+  login:
+    description: /login
+  register:
+    description: /register
