@@ -1,0 +1,21 @@
+#Para setar os items, use: idDoItem:data quantidadeMinima quantidadeMaxima chance
+#como no exemplo padrao.
+
+Items: 
+  - 276:0 1 1 20
+  - 287:0 3 10 30
+  - 310:0 1 1 5
+  - 311:0 1 1 10
+  - 312:0 1 1 7
+  - 313:0 1 1 4
+  - 282:0 1 16 60
+  - 259:0 1 1 75
+  - 326:0 1 1 40
+  - 327:0 1 1 30
+  - 46:0 1 14 60
+  - 384:0 1 2 30  
+  - 40:0 6 12 45
+  - 320:0 2 27 45
+  - 364:0 2 27 45   
+  
+  

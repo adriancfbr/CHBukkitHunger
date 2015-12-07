@@ -1,0 +1,508 @@
+KitsLista:
+  - Achilles
+  - Anchor
+  - Archer
+  - Barbarian
+  - Berserker
+  - Blink
+  - Boxer
+  - Camel
+  - Cannibal
+  - Checkpoint
+  - Cultivator
+  - Demoman
+  - Endermage
+  - Fireman
+  - Fisherman  
+  - Forge
+  - Frosty
+  - Gladiator
+  - Grandpa
+  - Grappler
+  - Hulk
+  - Jellyfish
+  - Kangaroo
+  - Lumberjack
+  - Miner
+  - Ninja
+  - Phantom
+  - Poseidon
+  - Pyro
+  - Reaper
+  - Redstoner
+  - Rider
+  - Snail
+  - Specialist
+  - Stomper  
+  - Switcher
+  - Tank
+  - Terrorist
+  - Thermo
+  - Thor
+  - Timelord
+  - Turtle
+  - Urgal
+  - Vacuum
+  - Vampire
+  - Viking
+  - Viper
+  - Worm
+  - Frozen
+  - Flash
+  - Burrower
+  - Blacksmith
+  - Hermit
+  - Confusion
+  - Weakhand
+  - Crafter
+  - SerialKiller
+  - LavaMan
+  - CookieMonster
+  - Hungerly
+  - Jumper
+  - Tower
+  - Spirit
+  - Meteoro
+  - Spy
+
+Kits:
+  Achilles:
+    nome: Achilles
+    gratis: false
+    items: 
+    descricao: 
+      - Leve dano reduzido de espadas, exceto espadas de madeira que te causam dano aumentado.
+  Anchor:
+    nome: Anchor
+    gratis: false
+    items: 
+    descricao: 
+      - Nao leve knockback nem de knockback ao atacar um jogador.
+  Archer:
+    nome: Archer
+    gratis: false
+    items: 
+      - 261:0 1 &cBow
+      - 262:0 1 &cArrow
+    descricao: 
+      - Nao leve knockback nem de knockback ao atacar um jogador.
+  Barbarian:
+    nome: Barbarian
+    gratis: false
+    items:
+      - 268:0 1 DURABILITY 2 &cBarbarian Enchanced Sword
+    descricao:
+      - Começe com uma espada de madeira e evolua ela ao matar jogadores.
+  Berserker:  
+    nome: Berserker
+    gratis: false
+    descricao: 
+      - Quando matar um jogador ganhe efeitos.
+  Blink:
+    nome: Blink
+    gratis: false
+    items:
+      - 399 0 1 &b&oBlink Star
+    descricao:
+      - Com sua Blink Star
+      - Va atras de jogadores
+      - Nao deixeos fugir
+  Boxer:
+    nome: Boxer
+    gratis: false
+    items:
+    descricao:
+      - Sua mao causa o mesmo dano de uma espada de madeira. 
+      - Receba qualquer tipo de dano levemente reduzido.
+  Camel:
+    nome: Camel
+    gratis: false
+    items:
+    descricao:
+      - Ganhe Speed e Regeneração ao andar na areia crie sopas com areia e cactus. 
+  Cannibal:  
+    nome: Cannibal
+    gratis: false
+    items: 
+      - 383:98 1 &cOcelot Egg
+      - 349:0 1 &7Raw Fish
+    descricao: 
+      - Encha sua fome ao atacar um jogador, e deixe ele com fome!
+  Checkpoint:
+    nome: CheckPoint
+    gratis: false
+    items:
+      - 113:0 1 &5CheckPoint
+      - 390:0 1 &5CheckPoint
+    descricao:
+      - Use o Vaso para se teleportar para o local marcado.
+  Cultivator:  
+    nome: Cultivator
+    gratis: false
+    items: 
+    descricao: 
+      - Faça arvores e sementes crescerem instantaneamente!
+  Demoman:  
+    nome: Demoman
+    gratis: false
+    items: 
+      - 70:0 3 &cStone Pressure Plate
+      - 13:0 3 &cGravel
+    descricao: 
+      - Placa de pressao de pedra + cascalho = BOOM!
+  Endermage:
+    nome: Endermage
+    gratis: false
+    items:
+      - 90:0 1 &5Mage Portal
+    descricao:
+      - Use seu portal para puxar os jogadores que estao em baixo e em cima de voce.
+  Fireman:  
+    nome: Fireman
+    gratis: false
+    items: 
+      - 326:0 1 &cBucket Water
+    descricao: 
+      - Seja imune ao Fogo e a Lava!
+  Fisherman:
+    nome: Fisherman
+    gratis: false
+    items:
+      - 346:0 1 &9Fisherman's Rod
+    descricao:
+      - Use sua vara de pescar para fisgar jogadores e puxa-los ate voce.
+  Forge:  
+    nome: Forge
+    gratis: false
+    items: 
+      - 263:0 5 &cCoal
+    descricao: 
+      - Fique full iron rapido!
+  Frosty:
+    nome: Frosty
+    gratis: false
+    items:
+    descricao:
+      - Ganhe Speed e Regeneração na neve.
+  Gladiator:  
+    nome: Gladiator
+    gratis: false
+    items: 
+      - 101:0 1 &cGladiator Arena
+    descricao: 
+      - Teleporte um jogador com voce para uma arena de vidro, impedindo que ele fuja!
+      - Excelente para jogar contra times e traps!
+  Grandpa:  
+    nome: Grandpa
+    gratis: false
+    items: 
+      - 280:0 1 KNOCKBACK 2 &cGrandpa Stick
+    descricao: 
+      - Ganhe 1 stick com knockback 2!
+  Grappler:  
+    nome: Grappler
+    gratis: false
+    items:
+      - 420:0 1 &cGrappling Hook
+    descricao: 
+      - Suba em qualquer coisa com a corda
+  Hulk:  
+    nome: Hulk
+    gratis: false
+    items: 
+    descricao: 
+      - Pegue jogadores e jogue-os para longe!
+  Jellyfish:  
+    nome: Jellyfish
+    gratis: false
+    items: 
+      - 337:0 1 &cJellyfish
+    descricao: 
+      - Use seu Jellyfish para colocar agua!
+  Kangaroo:  
+    nome: Kangaroo
+    gratis: false
+    items: 
+      - 401:0 1 &bDouble Jump
+    descricao: 
+      - Use seu firework para dar double jumps!
+  Lumberjack:  
+    nome: Lumberjack
+    gratis: false
+    items: 
+      - 271:0 1 &cLumberjack Wooden Axe
+    descricao: 
+      - Quebre arvores inteiras instantaneamente.
+  Miner:  
+    nome: Miner
+    gratis: false
+    items: 
+      - 274:0 1 DURABILITY 4 &cPickaxe Miner
+    descricao: 
+      - Use sua picareta mágica para minerar!
+  Ninja:
+    nome: Ninja
+    gratis: false
+    descricao:
+      - Ao clicar shift teleporte no player em que você hitou. 
+  Phantom:  
+    nome: Phantom
+    gratis: false
+    items: 
+      - 288:0 1 &cPhantom Feather
+    descricao: 
+      - Seja uma ave, voe por 5 segundos a cada 1 minuto!
+  Poseidon:
+    nome: Poseidon
+    gratis: false
+    items:
+    descricao:
+      - Ganhe força e Speed na água.
+  Pyro:    
+    nome: Pyro
+    gratis: false
+    items:
+      - 259:0 1 &cPyro
+      - 385:0 5 &cPyro 
+    descricao: 
+      - Use sua Firaball para atirar contra seus adversarios
+  Reaper:  
+    nome: Reaper
+    gratis: false
+    items: 
+      - 290:0 1 &cEnchada Reaper
+    descricao: 
+      - Utilize sua enchada para dar o efeito do wither nos corações de seus adversários!
+  Redstoner:  
+    nome: Redstoner
+    gratis: false
+    items: 
+      - 33:0 32 &cPistons
+      - 331:0 64 &cRedStone
+      - 331:0 64 &cRedStone
+      - 356:0 16 &cRedstone Repeater
+      - 23:0 4 &cDispenser
+      - 341:0 16 &cSlimeBall
+    descricao: 
+      - Comece com items para Trap !  
+  Rider:  
+    nome: Rider
+    gratis: false
+    items: 
+      - 329:0 1 &9Rider
+    descricao: 
+      - Pegue um cavalo
+  Snail:
+    nome: Snail
+    gratis: false
+    items:
+    descricao:
+      - Deixe o jogador com slow
+  Specialist:  
+    nome: Specialist
+    gratis: false
+    items: 
+      - 340:0 1 &cEnchantment Specialist
+    descricao: 
+      - Encante seus items com o livro quando matar um jogador ganhei xp!
+  Stomper:  
+    nome: Stomper
+    gratis: false
+    items: 
+    descricao: 
+      - Ao cair de lugares altos cause dano aos jogadores proximos, com base na altura de sua queda.
+  Switcher:
+     nome: Switcher
+     gratis: false
+     items: 
+      - 332:0 5 &cSwitcher ball
+     descricao: 
+      - Troque de lugar com seu adversario
+  Tank:
+    nome: Tank
+    gratis: false
+    items:
+    descricao:
+      - Ao matar um jogador, ele explode!
+      - Voce nao leva dano de explosoes!
+  Terrorist:
+    nome: Terrorist
+    gratis: false
+    items:
+      - 46:0 10 &4Terrorist TNT
+      - 69:0 1 &cTerrorist TNT Detonator
+    descricao:
+      - Começe com 10 TNT e um detonador de TNT's. 
+      - Clique no seu detonador de TNT's para explodir suas TNT's plantadas instantaneamente.
+      - Faça mais TNT's com 1 areia, 1 botao de pedra, e 1 polvora.
+  Thermo:  
+    nome: Thermo
+    gratis: false
+    items: 
+      - 151:0 1 &9Thermo kit
+    descricao: 
+      - Quando colocar o Thermo kit na agua ele vira lava, mesma coisa com a lava 
+  Thor:
+    nome: Thor
+    gratis: false
+    items:
+      - 271:0 1 &cThor Lightning Axe
+    descricao:
+      - Use seu machado para chamar trovoes.
+  Timelord:
+    nome: Timelord
+    gratis: false
+    items:
+      - 347:0 1 &2Timelord
+    descricao:
+      - Congele oo tempo usando o relogio.
+  Turtle:  
+    nome: Turtle
+    gratis: false
+    items: 
+    descricao: 
+      - O Dano diminui quando ficar de SHIFT!
+  Urgal:  
+    nome: Urgal
+    gratis: false
+    items: 
+      - 373:0 3 &cPower Potion
+    descricao: 
+      - Use suas Power Potions para ser mais forte!
+  Vacuum:
+    nome: Vacuum
+    gratis: false
+    items:
+      - 368 0 1 &cBlack Hole
+    descricao:
+      - Com sua Black Hole
+      - Puxara todos
+      - Os jogadores que estiverem nessa area (10 blocso)
+  Vampire:
+     nome: Vampire
+     gratis: false
+     descricao: 
+      - Quando matar um jogador ganhe uma poção
+  Frozen:
+     nome: Frozen
+     gratis: false
+     items:
+      - 332 0 1 &cKit Frozen
+     descricao: 
+      - Crie blocos de gelo
+  Flash:
+     nome: Flash
+     gratis: false
+     items:
+      - 76 0 1 &cKit Flash
+     descricao: 
+      - Teleporte para um bloco
+  Viking:
+    nome: Viking
+    gratis: false
+    items:
+    descricao:
+      - Use o machado para dar mais dano
+  Viper:
+    nome: Viper
+    gratis: false
+    items:
+    descricao:
+      - Deixe seus oponentes com veneno
+  Worm:
+    nome: Worm
+    gratis: false
+    items:
+    descricao:
+      - Quebre blocos de terra instantaneamente, e recupere sua vida e fome ao quebrar eles.
+      - Ao cair de qualquer altura, nao leve dano se cair em um bloco de terra.
+  Burrower:
+    nome: Burrower
+    gratis: false
+    items:
+     - 341:0 3 &cKit Burrower
+    descricao:
+      - Crie uma cabine de vidro.
+  Blacksmith:
+    nome: Blacksmith
+    gratis: false
+    descricao:
+      - Complete desafius e ganhe itens.
+  Hermit:
+    nome: Hermit
+    gratis: false
+    descricao:
+      - Complete desafius e ganhe itens.
+  Confusion:
+    nome: Confusion
+    gratis: false
+    descricao:
+      - De um hit no jogador e deixe ele dorgado
+  Weakhand:
+    nome: Weakhand
+    gratis: false
+    descricao:
+      - Deixe o jogador fraco
+  Crafter:  
+    nome: Crafter
+    gratis: true
+    items: 
+      - 399:0 1 &cStar Crafter
+    descricao: 
+      - Utilize a start como craft table e fornace ! 
+  SerialKiller:  
+    nome: SerialKiller
+    gratis: false
+    descricao: 
+      - deixe seus jogadores com efeitos
+  LavaMan:  
+    nome: LavaMan
+    gratis: false
+    items: 
+      - 337:0 1 &cLavaMan
+    descricao: 
+      - Crie blocos de lava do nada.
+  CookieMonster:  
+    nome: CookieMonster
+    gratis: false
+    descricao: 
+      - Ganhe um cookie ao comer ele ganhe speed.
+  Hungerly:  
+    nome: Hungerly
+    gratis: false
+    descricao: 
+      - Nunca fique com fome.
+  Jumper:  
+    nome: Jumper
+    gratis: false
+    items: 
+      - 368:0 5 &cJumper
+    descricao: 
+      - Se teleporte pelo mapa !
+  Tower:
+    nome: Tower
+    gratis: false
+    items:
+      - 399 0 1 &c&oTower Kit
+    descricao:
+      - Com seu Tower kit
+      - Crie uma torre com o jogador com você clickar
+      - Você so pode criar 1 vez
+  Spirit:
+    nome: Spirit
+    gratis: false
+    descricao:
+      - Fique invisivel do servidor por 7 minutos de partida.
+  Meteoro:
+    nome: Meteoro
+    gratis: false
+    items:
+      - 341:0 1 &cMeteoro
+    descricao:
+      - Num raio de 5 blocos você vai dar um raio e uma explosao nos jogadores por perto!.
+  Spy:
+    nome: Spy
+    gratis: false
+    descricao:
+      - Informe as cordenadas na bussola
+

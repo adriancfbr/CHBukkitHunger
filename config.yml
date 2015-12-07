@@ -1,0 +1,138 @@
+#Arquivo de config do CoolerHG Plugin de HungerGames
+
+#Nome do mundo que vai ser o HungerGames
+nome-mundo: world
+
+#O site do seu servidor
+Site: (em breve)
+
+#Jogadores para iniciar a partida
+minimo-players-necessarios: 2 
+
+#Nome do servidor
+Servidor: CoolerHG
+
+#Livro de inicio
+autor-livro: Adriancf
+title-livro: &aSeja Bem-Vindo
+texto-livro:
+  - '&c        CoolerHG'
+  - '&4&l&o  HungerGames'
+  - <br>
+  - '&9 Objetivo do Jogo:'
+  - '&7No HG voce tem que matar todos os outros players para ganhar'
+  - voce pode minerar, rushar ou ate mesmo fazer torres para vencer!
+  - '&c Mude de pagina'
+  - <np>
+  - '&9Kits'
+  - '&7Todos os players tem acesso a classes para obter melhor resultado em suas partidas
+  - Nossa equipe muda os kits para voce testar, voce pode comprar outros kits ou adquirir vip para
+  - ter acesso a mais kits!'
+  - '&1/kit [kitName]'
+  - para escolher um kit!
+  - <np>
+  - '&9Sopas'
+  - '&7As sopas recuperam 3.5 de vida durante o pvp, voce pode faze-las com cactos, coccoa beans ,cogumelos ,abobora e melancmia!'
+  - <np>
+  - '&9Feast'
+  - '&7No feast voce encontra equipamentos melhores para seu pvp, suas coordenadas sao anunciadas no chat para voce
+  - ir pegar os items!'
+
+#Texto de soup
+soup: "&c&oA soupa ela regenera 3.5 de vida! \n &c&oO servidor tem no momento sopa de flor,cogumelos,cactus e de cacau ,abobora e melancia!"
+
+#Info youtuber
+youtuber-subs: 2k
+youtuber-complemento: "&6Apos você gravar avise um admin"
+
+#Ip do servidor
+ip: CoolerHG.hgserver.ga
+
+#Pedir o login
+login: true
+registrar: true
+
+#Flodar o cara com a senha gerada 
+MsgCDS: false
+
+#Ativar o bolo no final
+bolo: true
+# Ligar sistema AntiDivulgacao?
+AntiDV: true
+# Ignorar espacos na checagem da divulgacao?
+IgnorarEspacos: true
+#Sistema anti divulgacoes de ip
+Avancado:
+  ReGex:
+  - '((https?|ftp):\/\/|(www|ftp)\.)?[a-z0-9-]+( (\.[a-z0-9-]+)|(\.[a-z0-9-]+)|(\.[a-z0-9-]+) )+([\/?].*)?'
+  
+ # Quais sao os palavroes
+Palavroes:
+- fdp
+- viado
+- puta
+- putinha
+- puto
+- putao
+- filho da puta
+- filho da put4
+- arrombado
+- cu
+- arrombadinho
+- arrombadinha
+- putazinha
+- arrombada
+- caralho
+- lixo
+- vi ado
+- via.do
+- via-do
+- viadinho
+- cuzao
+- porra
+- puta que pariu
+- puta que paril
+- vai tomar no cu
+- vtnc
+- vai se fuder
+- vsf
+- vai te fuder
+- baitola
+- bicha
+- corno
+- burra
+- burro
+- idiota
+- chupa rola
+- chupa pinto
+- vadia
+- safada
+- boqueteira
+- baleia
+- boceta
+- buceta
+- caralho
+- putinho
+- retardado
+- retardada
+- viadinh0
+- vaca
+- biscate
+- biscati 
+- lx
+- putaria
+
+#Comandos do servidor para o jogador nao divulgar
+LerComandos:
+- '/msg @arg'
+- '/g'
+- '/tell @arg'
+- '/me'
+- '/say'
+- '/aviso'
+
+Cores:
+- 'CHAT:YELLOW'
+- '/msg:GREEN'
+- '/g:GRAY'
+- '/tell:GREEN'

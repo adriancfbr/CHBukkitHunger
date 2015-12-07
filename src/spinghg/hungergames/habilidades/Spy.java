@@ -1,0 +1,81 @@
+package spinghg.hungergames.habilidades;
+
+import java.util.Random;
+
+import org.bukkit.Material;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Entity;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.entity.EntityDamageByEntityEvent;
+import org.bukkit.event.player.PlayerMoveEvent;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.potion.PotionEffect;
+import org.bukkit.potion.PotionEffectType;
+
+import spinghg.hungergames.kit.KitManager;
+import spinghg.hungergames.listeners.AmountAPI;
+import spinghg.hungergames.listeners.BossBar;
+import spinghg.hungergames.libsHg;
+
+public class Spy
+implements Listener, CommandExecutor
+{
+  private libsHg pl;
+  
+  public Spy(libsHg plugin)
+  {
+    this.pl = plugin;
+  }
+  
+  @EventHandler
+  public void onDamageSnail(EntityDamageByEntityEvent e)
+  {
+	  if (this.pl.comecou)
+    if (((e.getEntity() instanceof Player)) && ((e.getDamager() instanceof Player)))
+    {
+      Entity ent = e.getEntity();
+      Player player = (Player)e.getEntity();
+      Player damager = (Player)e.getDamager();
+      Player p = (Player)ent;
+      if ((this.pl.km.temKit(player)) && (this.pl.km.getPlayerKit(player, this.pl.km.getKitByName("Spy"))) && 
+        (damager.getItemInHand() != null) && 
+        (damager.getItemInHand().getType() != null)) {
+      	  if (damager.hasPermission("planeta.vip") && (damager.hasPermission("hg.youtuber")))
+    	  {
+    		  BossBar.setMessage(damager, p.getName() + " - Spy (§bSopas " + AmountAPI.getAmount(p, Material.MUSHROOM_SOUP) + " §f)" , 1);
+    	  }
+    	  else
+    	  {
+        BossBar.setMessage(damager, p.getName() + " - Spy", 1);
+      }
+    }
+    }
+  }
+  @EventHandler
+  public void onPlayerMove1(PlayerMoveEvent e)
+  {
+    Player p = e.getPlayer();
+    if ((this.pl.comecou) && (this.pl.km.temKit(p)) && (this.pl.km.getPlayerKit(p, this.pl.km.getKitByName("Spy")))) {
+    for (Entity a : p.getNearbyEntities(50.0D, 50.0D, 50.0D)) {
+        if ((a instanceof Player))
+        {
+         p.sendMessage("§e[Spy] Jogador " + a + " está se aproximando de você!"); 	
+        }
+    }
+  }
+  }
+
+  public boolean onCommand(CommandSender p, Command c, String label, String[] args)
+  {
+	    if (c.getName().equalsIgnoreCase("Snail")) {
+	      Player p1 = (Player)p;
+	      p1.chat("/kit Snail");
+	    }
+
+	    return false;
+	  }
+}

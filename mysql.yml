@@ -1,0 +1,7 @@
+mysql:
+  habilitado: false
+  host-name: localhost
+  porta: 3306
+  database: jogadores
+  usuario: root
+  senha: pass
