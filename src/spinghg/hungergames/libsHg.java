@@ -1,6 +1,3 @@
-// Code by AdrianCF 19/11/2014 Bukkit/Spigot 1.7.9 R0.3
-// Minecraft Server HungerGames Criador para o Sping/PlanetaCraft
-// Plugin Proprio
 package spinghg.hungergames;
 
 import java.io.BufferedReader;
@@ -349,7 +346,7 @@ public class libsHg extends JavaPlugin implements Listener
   private HashMap<String, Boolean> hiddenPlayers = new HashMap<String, Boolean>();
   private HashMap<String, Integer> violations = new HashMap<String, Integer>();
   public static Location hermit = null;
-  public static String nohermit = "§c§on§o foi localizado um pantano.";
+  public static String nohermit = "Â§cÂ§onÂ§o foi localizado um pantano.";
   HashMap<String, Integer> map = new HashMap<String, Integer>();
   private HashMap<UUID, AuraCheck> running = new HashMap<>();
   private boolean isRegistered;
@@ -598,7 +595,7 @@ public class libsHg extends JavaPlugin implements Listener
 		        	
 			  if (Config.getConfig(Config.ConfigFile.CONFIG).getString("MsgCDS").equals("false")) {
 				  if(Config.getConfig(Config.ConfigFile.CONFIG).getString("registrar").equals("false")) { 
-		        	player.kickPlayer("§bSeu Codigo de Segurança foi criado!\n§bEste CDS (Codigo de Segurança) ele é sua senha de login.\n§bLembre-se não passe pra ninguem anote seu CDS.\n§9§ovocê pode alterar seu codigo use /MudarCDS (Seu codigo) (Novo codigo). \n\n§9§oSeu codigo: §e§l" + cfg.getString("ChaveDS") + "\n§bQuando você entrar use /entrar (Seu codigo)");
+		        	player.kickPlayer("Â§bSeu Codigo de SeguranÃ§a foi criado!\nÂ§bEste CDS (Codigo de SeguranÃ§a) ele Ã© sua senha de login.\nÂ§bLembre-se nÃ£o passe pra ninguem anote seu CDS.\nÂ§9Â§ovocÃª pode alterar seu codigo use /MudarCDS (Seu codigo) (Novo codigo). \n\nÂ§9Â§oSeu codigo: Â§eÂ§l" + cfg.getString("ChaveDS") + "\nÂ§bQuando vocÃª entrar use /entrar (Seu codigo)");
 		        	cfg.set("MostrarCDS", "Nao");
 			  }
 			 }
@@ -635,11 +632,11 @@ public class libsHg extends JavaPlugin implements Listener
 
     {
 	    final String[] messages = { 
-	      "§9[" + Config.getConfig(Config.ConfigFile.CONFIG).getString("Servidor") + "] §7Compre §6VIP §7em nosso site:§9 " + Config.getConfig(Config.ConfigFile.CONFIG).getString("Site") + " §7.", 
-	      "§9[" + Config.getConfig(Config.ConfigFile.CONFIG).getString("Servidor") + "] §7Encontrou bugs ou Hack? aviso algum staff!", 
-	      "§9[" + Config.getConfig(Config.ConfigFile.CONFIG).getString("Servidor") + "] §7Denuncias de Hacks somente com provas.", 
-	      "§9[" + Config.getConfig(Config.ConfigFile.CONFIG).getString("Servidor") + "] §7Quer ser §6Youtuber §7 use /youtuber.",
-	      "§9[" + Config.getConfig(Config.ConfigFile.CONFIG).getString("Servidor") + "] §7Siga-nos no twitter §9@PlanetaCraft"};
+	      "Â§9[" + Config.getConfig(Config.ConfigFile.CONFIG).getString("Servidor") + "] Â§7Compre Â§6VIP Â§7em nosso site:Â§9 " + Config.getConfig(Config.ConfigFile.CONFIG).getString("Site") + " Â§7.", 
+	      "Â§9[" + Config.getConfig(Config.ConfigFile.CONFIG).getString("Servidor") + "] Â§7Encontrou bugs ou Hack? aviso algum staff!", 
+	      "Â§9[" + Config.getConfig(Config.ConfigFile.CONFIG).getString("Servidor") + "] Â§7Denuncias de Hacks somente com provas.", 
+	      "Â§9[" + Config.getConfig(Config.ConfigFile.CONFIG).getString("Servidor") + "] Â§7Quer ser Â§6Youtuber Â§7 use /youtuber.",
+	      "Â§9[" + Config.getConfig(Config.ConfigFile.CONFIG).getString("Servidor") + "] Â§7Siga-nos no twitter Â§9@PlanetaCraft"};
 
 	    setTask1(Integer.valueOf(Bukkit.getServer().getScheduler().scheduleSyncRepeatingTask(this, new Runnable() {
 	      public void run() {
@@ -666,12 +663,12 @@ public class libsHg extends JavaPlugin implements Listener
 		    , 0L, 500L)));
 	  }
   
-    getServer().getConsoleSender().sendMessage("§aHg ativado!");
+    getServer().getConsoleSender().sendMessage("Â§aHg ativado!");
     libsHg.logger.log(Level.INFO, "HG ativado!");
 
     if (Bukkit.getPluginManager().getPlugin("BossBar") != null)
     {
-      libsHg.logger.log(Level.INFO, ChatColor.RED + "[HG] O servidor nao pode ter o BossBar este Plugin j§ tem sistema do BarAPI!");
+      libsHg.logger.log(Level.INFO, ChatColor.RED + "[HG] O servidor nao pode ter o BossBar este Plugin jÂ§ tem sistema do BarAPI!");
       Bukkit.shutdown();
     }
     if (Bukkit.getPluginManager().getPlugin("TerrainControl") == null)
@@ -709,7 +706,7 @@ public class libsHg extends JavaPlugin implements Listener
     }
     if (Bukkit.getPluginManager().getPlugin("BarAPI") != null)
     {
-      libsHg.logger.log(Level.INFO, ChatColor.RED + "[Avatar] Você ativou o BossBar de Kit!");
+      libsHg.logger.log(Level.INFO, ChatColor.RED + "[Avatar] VocÃª ativou o BossBar de Kit!");
     }
     if (Bukkit.getPluginManager().getPlugin("kPandoraHG") != null)
     {
@@ -1170,7 +1167,7 @@ public void regThings()
     
     ItemStack tnt = new ItemStack(Material.TNT);
     ItemMeta im = tnt.getItemMeta();
-    im.setDisplayName("§4Terrorist TNT");
+    im.setDisplayName("Â§4Terrorist TNT");
     tnt.setItemMeta(im);
 
     ShapelessRecipe recipe = new ShapelessRecipe(tnt);
@@ -1265,11 +1262,11 @@ public void winPlayer(final Player player)
 			e.printStackTrace();
 		}
       	if (player.hasPermission("hg.vip") && (player.hasPermission("hg.youtuber"))) {
-      	  player.sendMessage("§3[Coins] §6você ganhou §325 coins §6você tem agora §3" + Integer.valueOf(Coins) + " §6 Coins.");
+      	  player.sendMessage("Â§3[Coins] Â§6vocÃª ganhou Â§325 coins Â§6vocÃª tem agora Â§3" + Integer.valueOf(Coins) + " Â§6 Coins.");
     	}
     	else
     	{
-        player.sendMessage("§3[Coins] §6você ganhou §315 coins §6você tem agora §3" + Integer.valueOf(Coins) + " §6 Coins.");
+        player.sendMessage("Â§3[Coins] Â§6vocÃª ganhou Â§315 coins Â§6vocÃª tem agora Â§3" + Integer.valueOf(Coins) + " Â§6 Coins.");
     	}
       
   
@@ -1291,7 +1288,7 @@ public void winPlayer(final Player player)
      fwm.setPower(4);
      fw.setFireworkMeta(fwm);
      Bukkit.getServer().getWorld("world").setGameRuleValue("doDaylightCycle", "false");
-     Bukkit.broadcastMessage("§c§o O jogador " + player.getName() + " venceu este torneio");
+     Bukkit.broadcastMessage("Â§cÂ§o O jogador " + player.getName() + " venceu este torneio");
       
 	    if (player.hasPermission("hg.mod") && (player.hasPermission("hg.admin")))
 	    {
@@ -1378,7 +1375,7 @@ public void winPlayer(final Player player)
         case 5:
           for (Player online : Bukkit.getOnlinePlayers()) {
             online.setLevel(5);
-            BossBar.setMessage(online, "§6§oReiniciando servidor em", 5);
+            BossBar.setMessage(online, "Â§6Â§oReiniciando servidor em", 5);
           }
           break;
         case 4:
@@ -1401,14 +1398,14 @@ public void winPlayer(final Player player)
             online.setLevel(1);
             libsHg.stafflog("======Fim da Partida=====");
             online.playSound(online.getLocation(), Sound.LEVEL_UP, 10.0F, 1.0F);
-            player.kickPlayer("§cVocê ganhou!\n§c§oServidor reiniciando!\n§a§oObrigado por jogar no PlanetaCraft!");
+            player.kickPlayer("Â§cVocÃª ganhou!\nÂ§cÂ§oServidor reiniciando!\nÂ§aÂ§oObrigado por jogar no PlanetaCraft!");
           }
           break;
         case 0:
           cancel();
           for (Player all : Bukkit.getOnlinePlayers()) {
-            all.kickPlayer("§c" + player.getName() + " ganhou!\n" + 
-              "§c§oServidor reiniciando!\n §a§o Obrigado por jogar no PlanetaCraft!");
+            all.kickPlayer("Â§c" + player.getName() + " ganhou!\n" + 
+              "Â§cÂ§oServidor reiniciando!\n Â§aÂ§o Obrigado por jogar no PlanetaCraft!");
             all.setLevel(0);
           }
           Bukkit.getServer().shutdown();
@@ -1434,7 +1431,7 @@ public void winPlayer(final Player player)
 	    int millis = libsHg.invicCounter * 1000;
 	    SimpleDateFormat df = new SimpleDateFormat("m:ss");
 	    String time = df.format(Integer.valueOf(millis));
-	    objective.setDisplayName("§cInvencibilidade: " + time);
+	    objective.setDisplayName("Â§cInvencibilidade: " + time);
 	    objective.setDisplaySlot(DisplaySlot.SIDEBAR);;
 	    p.setScoreboard(board);	  
 	 }
@@ -1445,7 +1442,7 @@ public void winPlayer(final Player player)
 	    int millis = libsHg.invicCounter * 1000;
 	    SimpleDateFormat df = new SimpleDateFormat("m:ss");
 	    String time = df.format(Integer.valueOf(millis));
-	    objective.setDisplayName("§cIniciando em: " + time);
+	    objective.setDisplayName("Â§cIniciando em: " + time);
 	    objective.setDisplaySlot(DisplaySlot.SIDEBAR);;
 	    p.setScoreboard(board);	  
 	 }
@@ -1454,12 +1451,12 @@ public void winPlayer(final Player player)
 	  {  
 	    Scoreboard board = getScoreBoard();
 	    Objective objective = board.registerNewObjective("starting", "dummy");
-	    objective.setDisplayName("§6HungerGames");
+	    objective.setDisplayName("Â§6HungerGames");
 	    objective.setDisplaySlot(DisplaySlot.SIDEBAR);
-	    String s13 = "§fJogadores:";
+	    String s13 = "Â§fJogadores:";
 	    Score a13 = objective.getScore(Bukkit.getOfflinePlayer(s13));
 	    a13.setScore(Integer.valueOf(libsHg.vivos.size()));
-	    String s14 = "§fNecessario:";
+	    String s14 = "Â§fNecessario:";
 	    Score a14 = objective.getScore(Bukkit.getOfflinePlayer(s14));
 	    a14.setScore(2);
 	    p.setScoreboard(board);
@@ -1733,7 +1730,7 @@ public void winPlayer(final Player player)
 		        }
 		        Player player = Bukkit.getPlayer(args[0]);
 		        if(player==null) {
-		            sender.sendMessage("§c§oJogador não encontrado.");
+		            sender.sendMessage("Â§cÂ§oJogador nÃ£o encontrado.");
 		            return true;
 		        }
 		        if(!isRegistered) {
@@ -1758,21 +1755,21 @@ public void winPlayer(final Player player)
 						    if (libsHg.login.contains(player)) {
 						        if(cfg.getString("MostrarCDS").equals("Sim")) {
 						        	  if(Config.getConfig(Config.ConfigFile.CONFIG).getString("MsgCDS").equals("true")) {
-						             player.sendMessage("§9Novo Jogadores> §7Sua senha § --> " + cfg.getString("ChaveDS") + " \nmude sua senha usando /MudarCDS <Sua Senha> <Nova senha>.");
-						             player.sendMessage("§c§oUse /entrar (CDS informado).");
+						             player.sendMessage("Â§9Novo Jogadores> Â§7Sua senha Â§ --> " + cfg.getString("ChaveDS") + " \nmude sua senha usando /MudarCDS <Sua Senha> <Nova senha>.");
+						             player.sendMessage("Â§cÂ§oUse /entrar (CDS informado).");
 						             cfg.set("MostrarCDS", "Nao");
 						             libsHg.vivos.remove(player);
 						             
 						             return;
 						    }
 						        	  if(Config.getConfig(Config.ConfigFile.CONFIG).getString("registrar").equals("true")) {
-						        		  player.sendMessage("§c§oUse /registrar (Sua senha)");
+						        		  player.sendMessage("Â§cÂ§oUse /registrar (Sua senha)");
 						        	  }
 						        		  
 						        }
 						        else
 						        {
-						        	player.sendMessage("§c§oUse /entrar (Sua senha");
+						        	player.sendMessage("Â§cÂ§oUse /entrar (Sua senha");
 						        }
 						        
 						    }
@@ -1782,7 +1779,7 @@ public void winPlayer(final Player player)
 		    @SuppressWarnings("deprecation")
 			public void inf() {
 		    	  for (Player p : Bukkit.getOnlinePlayers()) {
-		    		  p.sendMessage("§c§o[Status] use /status " + p.getName());
+		    		  p.sendMessage("Â§cÂ§o[Status] use /status " + p.getName());
 		    	  }
 					  
 		    }
@@ -1863,11 +1860,11 @@ public void winPlayer(final Player player)
 			    new BukkitRunnable() {
 			      public void run() {
 			        if ((libsHg.lista.contains(Bukkit.getIp())) || (libsHg.lista.contains(Bukkit.getIp() + ":" + Bukkit.getPort()))) {
-			          Bukkit.getConsoleSender().sendMessage("§aServer autorizado.");
-			          Bukkit.getConsoleSender().sendMessage("§aO IP deste Servidor:§f " + Bukkit.getIp() + ":" + Bukkit.getPort());
+			          Bukkit.getConsoleSender().sendMessage("Â§aServer autorizado.");
+			          Bukkit.getConsoleSender().sendMessage("Â§aO IP deste Servidor:Â§f " + Bukkit.getIp() + ":" + Bukkit.getPort());
 			        } else {
-			          Bukkit.getConsoleSender().sendMessage("§cServer nao autorizado.");
-			          Bukkit.getConsoleSender().sendMessage("§aO IP deste Servidor:§f " + Bukkit.getIp() + ":" + Bukkit.getPort());
+			          Bukkit.getConsoleSender().sendMessage("Â§cServer nao autorizado.");
+			          Bukkit.getConsoleSender().sendMessage("Â§aO IP deste Servidor:Â§f " + Bukkit.getIp() + ":" + Bukkit.getPort());
 			          Bukkit.shutdown();
 			        }
 			      }
@@ -1880,7 +1877,7 @@ public void winPlayer(final Player player)
 				    for (Player p : Bukkit.getOnlinePlayers()) {
 				      if ((!libsHg.alertas.contains(p)) || 
 				        (!p.hasPermission(libsHg.PERMISSAO))) continue;
-				      p.sendMessage("§6§o" + msg);
+				      p.sendMessage("Â§6Â§o" + msg);
 				    }
 				  }
 
@@ -1921,8 +1918,8 @@ public void winPlayer(final Player player)
 					    int millis = libsHg.startingCounter * 1000;
 					    SimpleDateFormat df = new SimpleDateFormat("mm:ss");
 					    String time = df.format(Integer.valueOf(millis));
-					    start.setDisplayName("§cIniciando em: " + time);
-					  start.getScore(Bukkit.getOfflinePlayer("§fJogadores:")).setScore(Integer.valueOf(libsHg.vivos.size()));
+					    start.setDisplayName("Â§cIniciando em: " + time);
+					  start.getScore(Bukkit.getOfflinePlayer("Â§fJogadores:")).setScore(Integer.valueOf(libsHg.vivos.size()));
 					  }
 				  }
 				  @SuppressWarnings({ "deprecation", "static-access" })
@@ -1933,8 +1930,8 @@ public void winPlayer(final Player player)
 					    int millis = libsHg.invicCounter * 1000;
 					    SimpleDateFormat df = new SimpleDateFormat("m:ss");
 					    String time = df.format(Integer.valueOf(millis));
-					    start.setDisplayName("§cInvencibilidade: " + time);
-					  start.getScore(Bukkit.getOfflinePlayer("§fJogadores:")).setScore(Integer.valueOf(libsHg.vivos.size()));
+					    start.setDisplayName("Â§cInvencibilidade: " + time);
+					  start.getScore(Bukkit.getOfflinePlayer("Â§fJogadores:")).setScore(Integer.valueOf(libsHg.vivos.size()));
 					  }
 				  }
 				  			  
@@ -1962,4 +1959,4 @@ public void winPlayer(final Player player)
 	  
 
 
-
+
